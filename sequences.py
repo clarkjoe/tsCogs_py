@@ -4,7 +4,7 @@ import numpy as npy
 def findSignedSequence(vector, sign):
     poten_max = real_max = 0
 
-    if len(vector) > 1:
+    if sign in set(npy.sign(vector)):
         for number in npy.sign(vector):
             if number == sign:
                 poten_max += 1
@@ -12,4 +12,6 @@ def findSignedSequence(vector, sign):
                 if poten_max > real_max:
                     real_max = poten_max
                 poten_max = 0
+    else:
+        return 0
     return real_max
