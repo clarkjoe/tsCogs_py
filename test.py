@@ -1,7 +1,7 @@
 import sequences
 
-vec = [0,0,0,45,-55,-3,-2,-98,38,2,-1,5]
+vec = [-1,0,1]
 
-var = sequences.findSignedSequence(vec, -1)
+var = sequences.findLadderSequence(vec, "IP")
 
 print var
