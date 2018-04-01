@@ -1,5 +1,4 @@
 import numpy as npy
-import itertools as ittools
 
 # Find longest sequence of zeros
 def findSignedSequence(array, sign):

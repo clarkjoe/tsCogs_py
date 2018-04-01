@@ -1,7 +1,9 @@
 import sequences
+import nest_generic
 
 vec = [-1,0,1]
 
-var = sequences.findLadderSequence(vec, "IP")
+# var = sequences.findLadderSequence(vec, "IP")
 
-print var
+nest_generic.nest_core(1, 'string')
+# print (var)
